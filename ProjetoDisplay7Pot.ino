@@ -1,6 +1,6 @@
 #include "MiniBiblioteca.h"
 
-DisplaySeven displayLed(3, 4, 5, 6);
+DisplaySeven displayLed(3, 4, 5, 6); //As quatro portas conectadas ao Circuito Integrado
 
 void setup() 
 {
