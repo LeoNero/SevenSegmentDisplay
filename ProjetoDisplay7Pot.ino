@@ -1,69 +1,19 @@
-// ProjetoDisplay7Pot.ino
-
 #include "MiniBiblioteca.h"
 
-const int a = 3;
-const int b = 4;
-const int c = 5;
-const int d = 6;
+DisplaySeven displayLed(3, 4, 5, 6);
 
-const int Buzzer = 8;
-
-const int LedAmarelo = 10;
-const int LedVerde = 11;
-
-const int Potenciometro = A0;
-
-int pwm = 0;
-int valorPot = 0;
-int valorDisplay = 0;
-
-void setup() {
-	pinMode(a, OUTPUT);
-	pinMode(b, OUTPUT);
-	pinMode(c, OUTPUT);
-	pinMode(d, OUTPUT);
-
-	pinMode(Buzzer, OUTPUT);
-
-	pinMode(LedAmarelo, OUTPUT);
-	pinMode(LedVerde, OUTPUT);
-
-	pinMode(Potenciometro, INPUT);
-
-	Serial.begin(9600);
+void setup() 
+{
 }
 
-void loop() {
+void loop() 
+{
+	displayLed.numberZero(); //Exibirá o numero 0 no display de 7 segmentos
+	displayLed.numberOne(500); //Você tambem pode escolher o delay da exibicao. Padrao é 1000
 
-	valorPot = analogRead(Potenciometro);
-	pwm = transformaEscala(valorPot, 0, 1023, 0, 255);
-	valorDisplay = transformaEscala(valorPot, 0, 1023, 0, 9);
+	displayLed.chooseNumbers(4, 8); //Você pode escolher os numeros que quer exibir em um intervalor. No caso, de 4 a 8
+	displayLed.chooseNumbers(4, 8, 300); //Voce tambem pode escolher o tempo do delay. Padrao é 1000 
 
-	Serial.print("Valor do potenciometro: ");
-	Serial.println(valorPot);
-
-	Serial.print("Valor do PWM: ");
-	Serial.println(pwm);
-
-	Serial.print("Valor para mostrar no display: ");
-	Serial.println(valorDisplay);
-
-	Serial.println(" ");
-
-	if (valorDisplay < 5) {
-		digitalWrite(LedVerde, LOW);
-		analogWrite(LedAmarelo, pwm);
-	} else {
-		digitalWrite(LedAmarelo, LOW);
-		analogWrite(LedVerde, pwm);
-	}
-
-	mostrarNumeroNoDisplay(valorDisplay, a, b, c, d);
-
-	if (valorDisplay == 9) {
-		digitalWrite(Buzzer, HIGH);	
-	} else {
-		digitalWrite(Buzzer, LOW);	
-	}
+	displayLed.allNumbers(); //Exibirá todos os números (de 0 a 9)
+	displayLed.allNumbers(); //Você também pode escolher o tempo do delay. Padrao é 1000
 }
