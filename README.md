@@ -1,5 +1,7 @@
 `Mini Biblioteca Display Arduino`
 
+====================
+
 #**Requisitos**
 - Display de 9 segmentos
 - Circuito integrado
