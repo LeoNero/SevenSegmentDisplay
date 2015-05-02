@@ -1,10 +1,10 @@
-Mini Biblioteca Display Arduino
+Mini Biblioteca Arduino para Display de Sete Segmentos 
 =============
 
 Requisitos
 -------
 - Display de 7 segmentos
-- Circuito integrado
+- Circuito integrado 4511
 
 Como usar
 -------
