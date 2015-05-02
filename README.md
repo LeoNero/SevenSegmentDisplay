@@ -8,6 +8,6 @@
 
 #**Como usar**
 Inclua a biblioteca no seu programa
-```
+```cpp
 #include "MiniBiblioteca.h"
 ```
