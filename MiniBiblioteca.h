@@ -20,7 +20,7 @@ class DisplaySeven
 		void numberEight(float timer = 1000);
 		void numberNine(float timer = 1000);
 
-		void chooseNumbers(int numberMin, int numberMax, float timer = 1000);
+		void chooseNumbers(int numberFirst, int numberSecond, float timer = 1000);
 
 		void allNumbers(float timer = 1000);
 	

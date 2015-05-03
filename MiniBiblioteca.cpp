@@ -126,10 +126,18 @@ void DisplaySeven::numberNine(float timer) {
 	Usuario pode escolher os numeros, em um intervalo, que quer exibir,
 	e o intervalo entre a exibicao de cada um. O padrao é 1000
  */
-void DisplaySeven::chooseNumbers(int numberMin, int numberMax, float timer) {
-	for (int i = numberMin; i <= numberMax; i++) {
-		displayNumber(i);
-		delay(timer);
+void DisplaySeven::chooseNumbers(int numberFirst, int numberSecond, float timer) {
+
+	if (numberSecond > numberFirst) {
+		for (int i = numberFirst; i <= numberSecond; i++) {
+			displayNumber(i);
+			delay(timer);
+		}
+	} else if (numberFirst > numberSecond) {
+		for (int i = numberFirst; i >= numberSecond; i--) {
+			displayNumber(i);
+			delay(timer);
+		}
 	}
 }
 
