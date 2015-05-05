@@ -16,9 +16,5 @@ void loop()
 	displayLed.chooseNumbers(4, 8, 300); //Voce tambem pode escolher o tempo do delay. Padrao é 1000 
 
 	displayLed.allNumbers(); //Exibirá todos os números (de 0 a 9)
-<<<<<<< HEAD
 	displayLed.allNumbers(500); //Você também pode escolher o tempo do delay. Padrao é 1000
-=======
-	displayLed.allNumbers(400); //Você também pode escolher o tempo do delay. Padrao é 1000
->>>>>>> 5685e1a96e7a2550525d7d6c630071f484cad8dd
 }
