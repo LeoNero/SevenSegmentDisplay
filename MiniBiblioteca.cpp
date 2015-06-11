@@ -67,8 +67,6 @@ void DisplaySeven::displayNumber(int number) {
 
 
 /*
-	Exibirá, no display, o numero que o usuario escolher.
-	Ele pode tambem escolher o tempo do delay. O padrao é 1000
 */
 
 void DisplaySeven::numberZero(float timer) {
@@ -123,8 +121,6 @@ void DisplaySeven::numberNine(float timer) {
 
 
 /*
-	Usuario pode escolher os numeros, em um intervalo, que quer exibir,
-	e o intervalo entre a exibicao de cada um. O padrao é 1000
  */
 void DisplaySeven::chooseNumbers(int numberFirst, int numberSecond, float timer) {
 
@@ -143,8 +139,6 @@ void DisplaySeven::chooseNumbers(int numberFirst, int numberSecond, float timer)
 
 
 /*
-	Exibirá todos os números.
-	Delay padrao: 1000
 */
 void DisplaySeven::allNumbers(float timer) {
 	for (int i = 0; i < 10; i++) {
