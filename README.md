@@ -37,14 +37,14 @@ Other numbers:
 
 #####You can set a interval of numbers to display
 ```cpp
-displayLed.chooseNumbers(2, 5); //The display will show the números de 2 a 5, com um delay de cada número com padrão de 1000
-displayLed.chooseNumbers(2, 5, 400); //Você pode modificar o tempo do delay!
+displayLed.chooseNumbers(2, 5); //The display will show the numbers 2 to 5, with a standard delay of 1000
+displayLed.chooseNumbers(2, 5, 400); //You can modify the delay!
 
-displayLed.chooseNumbers(8, 4); //No caso, será mostrado os números de 4 a 8 em ordem decrescente
+displayLed.chooseNumbers(8, 4); //The display will show the numbers 4 to 8 in descending order
 ```
 
-#####Você também pode mostrar todos os números de 0 a 9 de uma vez :D
+#####You can show the numbers all at once! :D
 ```cpp
 displayLed.allNumbers(); 
-displayLed.allNumbers(400); //Se quiser, mude o tempo do delay de cada número!
+displayLed.allNumbers(400); //You can modify the delay!
 ```
