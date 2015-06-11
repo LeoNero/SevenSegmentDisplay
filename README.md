@@ -1,31 +1,30 @@
-Mini Biblioteca Arduino para Display de Sete Segmentos 
+Seven Segment Display 
 =============
 
-Requisitos
+Requirements 
 -------
-- Display de 7 segmentos
-- Circuito integrado 4511
+- Seven Segment Display 
+- IC 4511
 
-Como usar
+How to use
 -------
-Inclua a biblioteca no seu programa
+Include the library in your project
 ```cpp
 #include "MiniBiblioteca.h"
 ```
-
-Depois, "set" os pinos do Circuito Integrado que estão ligados à protoboard
+After that, set the IC's pins that are connected to the Arduino
 ```cpp
 DisplaySeven displayLed(3, 4, 5, 6); 
 ```
 
-Comandos
+Commands
 -------
-##### Você pode exibir um número de cada vez:
+##### You can display a number at a time:
 ```cpp
-displayLed.numberZero(); //O padrão de delay é 1000
-displayLed.numberZero(300); //Você pode modificar o tempo do delay!
+displayLed.numberZero(); //Standard delay is 1000
+displayLed.numberZero(300); //You can modify the delay!
 ```
-Outros números:
+Other numbers:
 - numberOne()
 - numberTwo()
 - numberThree()
@@ -36,9 +35,9 @@ Outros números:
 - numberEight()
 - numberNine()
 
-#####Você pode escolher um intervalo de números para mostrar
+#####You can set a interval of numbers to display
 ```cpp
-displayLed.chooseNumbers(2, 5); //O display mostrará os números de 2 a 5, com um delay de cada número com padrão de 1000
+displayLed.chooseNumbers(2, 5); //The display will show the números de 2 a 5, com um delay de cada número com padrão de 1000
 displayLed.chooseNumbers(2, 5, 400); //Você pode modificar o tempo do delay!
 
 displayLed.chooseNumbers(8, 4); //No caso, será mostrado os números de 4 a 8 em ordem decrescente
