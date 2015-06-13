@@ -1,4 +1,4 @@
-#include "MiniBiblioteca.h"
+#include "DisplaySeven.h"
 
 DisplaySeven::DisplaySeven(int pinA, int pinB, int pinC, int pinD) 
 {
