@@ -8,7 +8,7 @@ Requirements
 
 The Circuit
 -------
-![The circuit](http://i.imgur.com/4ggCYzO.png)
+![The circuit](http://i.imgur.com/a7dYkMR.png)
 
 How to use
 -------
