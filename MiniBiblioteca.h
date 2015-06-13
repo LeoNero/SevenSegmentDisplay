@@ -1,13 +1,13 @@
-#ifndef MiniBiblioteca_h
+#ifndef SevenSegment_h
 
-#define MiniBiblioteca_h
+#define SevenSegment_h
 
 #include <Arduino.h>
 
-class DisplaySeven
+class SevenSegment
 {
 	public:
-		DisplaySeven(int pinA, int pinB, int pinC, int pinD);
+		SevenSegment(int pinA, int pinB, int pinC, int pinD);
 		
 		void numberZero(float timer = 1000);
 		void numberOne(float timer = 1000);
