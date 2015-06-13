@@ -6,9 +6,9 @@ Requirements
 - Seven Segment Display 
 - IC 4511
 
-The Circuit (image- credits to [Robocore](https://www.robocore.net/))
+The Circuit
 -------
-![](http://i.imgur.com/8Dz6Ydr.png)
+![The circuit](http://i.imgur.com/8Dz6Ydr.png)
 
 How to use
 -------
