@@ -1,6 +1,6 @@
-#include "DisplaySeven.h"
+#include "SevenSegment.h"
 
-DisplaySeven::DisplaySeven(int pinA, int pinB, int pinC, int pinD) 
+SevenSegment::SevenSegment(int pinA, int pinB, int pinC, int pinD) 
 {
 	pinMode(pinA, OUTPUT);
 	pinMode(pinB, OUTPUT);
@@ -13,7 +13,7 @@ DisplaySeven::DisplaySeven(int pinA, int pinB, int pinC, int pinD)
 	_pinD = pinD;
 }
 
-void DisplaySeven::binaryToDisplay(int statePinA, int statePinB, int statePinC, int statePinD) 
+void SevenSegment::binaryToDisplay(int statePinA, int statePinB, int statePinC, int statePinD) 
 {
 	digitalWrite(_pinA, statePinA);
 	digitalWrite(_pinB, statePinB);
@@ -21,7 +21,7 @@ void DisplaySeven::binaryToDisplay(int statePinA, int statePinB, int statePinC, 
 	digitalWrite(_pinD, statePinD);
 }
 
-void DisplaySeven::displayNumber(int number) {
+void SevenSegment::displayNumber(int number) {
 	switch(number) {
 		case 0:
 			binaryToDisplay(0, 0, 0, 0);
@@ -69,52 +69,52 @@ void DisplaySeven::displayNumber(int number) {
 /*
 */
 
-void DisplaySeven::numberZero(float timer) {
+void SevenSegment::numberZero(float timer) {
 	displayNumber(0);
 	delay(timer);	
 }
 
-void DisplaySeven::numberOne(float timer) {
+void SevenSegment::numberOne(float timer) {
 	displayNumber(1);
 	delay(timer);	
 }
 
-void DisplaySeven::numberTwo(float timer) {
+void SevenSegment::numberTwo(float timer) {
 	displayNumber(2);
 	delay(timer);	
 }
 
-void DisplaySeven::numberThree(float timer) {
+void SevenSegment::numberThree(float timer) {
 	displayNumber(3);
 	delay(timer);	
 }
 
-void DisplaySeven::numberFour(float timer) {
+void SevenSegment::numberFour(float timer) {
 	displayNumber(4);
 	delay(timer);	
 }
 
-void DisplaySeven::numberFive(float timer) {
+void SevenSegment::numberFive(float timer) {
 	displayNumber(5);
 	delay(timer);	
 }
 
-void DisplaySeven::numberSix(float timer) {
+void SevenSegment::numberSix(float timer) {
 	displayNumber(6);
 	delay(timer);	
 }
 
-void DisplaySeven::numberSeven(float timer) {
+void SevenSegment::numberSeven(float timer) {
 	displayNumber(7);
 	delay(timer);	
 }
 
-void DisplaySeven::numberEight(float timer) {
+void SevenSegment::numberEight(float timer) {
 	displayNumber(8);
 	delay(timer);	
 }
 
-void DisplaySeven::numberNine(float timer) {
+void SevenSegment::numberNine(float timer) {
 	displayNumber(9);
 	delay(timer);	
 }
@@ -122,7 +122,7 @@ void DisplaySeven::numberNine(float timer) {
 
 /*
  */
-void DisplaySeven::chooseNumbers(int numberFirst, int numberSecond, float timer) {
+void SevenSegment::chooseNumbers(int numberFirst, int numberSecond, float timer) {
 
 	if (numberSecond > numberFirst) {
 		for (int i = numberFirst; i <= numberSecond; i++) {
@@ -140,7 +140,7 @@ void DisplaySeven::chooseNumbers(int numberFirst, int numberSecond, float timer)
 
 /*
 */
-void DisplaySeven::allNumbers(float timer) {
+void SevenSegment::allNumbers(float timer) {
 	for (int i = 0; i < 10; i++) {
 		displayNumber(i);
 		delay(timer);
