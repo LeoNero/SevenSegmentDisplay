@@ -14,11 +14,11 @@ How to use
 -------
 Include the library in your project
 ```cpp
-#include "MiniBiblioteca.h"
+#include "SevenSegment.h"
 ```
 After that, set the IC's pins that are connected to the Arduino
 ```cpp
-DisplaySeven displayLed(3, 4, 5, 6); 
+SevenSegment displayLed(3, 4, 5, 6); 
 ```
 
 Commands
