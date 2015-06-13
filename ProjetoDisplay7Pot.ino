@@ -1,6 +1,6 @@
-#include "MiniBiblioteca.h"
+#include "SevenSegment.h"
 
-DisplaySeven displayLed(3, 4, 5, 6); 
+SevenSegment displayLed(3, 4, 5, 6); 
 
 void setup() 
 {
