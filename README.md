@@ -47,7 +47,7 @@ displayLed.chooseNumbers(2, 5, 400); //You can modify the delay!
 displayLed.chooseNumbers(8, 4); //The display will show the numbers 4 to 8 in descending order
 ```
 
-#####You can show the all numbers at once! :D
+#####You can show all numbers at once! :D
 ```cpp
 displayLed.allNumbers(); 
 displayLed.allNumbers(400); //You can modify the delay!
