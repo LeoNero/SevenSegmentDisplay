@@ -2,12 +2,9 @@
 
 SevenSegment displayLed(3, 4, 5, 6); 
 
-void setup() 
-{
-}
+void setup() {}
 
-void loop() 
-{
+void loop() {
 	displayLed.numberZero(); 
 	displayLed.numberOne(500); 
 
